@@ -1,0 +1,189 @@
+{
+  "jspm": {
+    "name": "FutureProof1612.js",
+    "main": "systemjs.config.js",
+    "dependencies": {
+      "@angular/forms": "npm:@angular/forms@^2.2.4",
+      "@angular/http": "npm:@angular/http@^2.2.4",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^2.2.4",
+      "@angular/router": "npm:@angular/router@^3.2.4",
+      "babel-plugin-angular2-annotations": "npm:babel-plugin-angular2-annotations@^5.1.0",
+      "babel-plugin-transform-class-properties": "npm:babel-plugin-transform-class-properties@^6.19.0",
+      "babel-plugin-transform-flow-strip-types": "npm:babel-plugin-transform-flow-strip-types@^6.18.0",
+      "core-js": "npm:core-js@^2.4.1",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.8",
+      "socket.io-client": "github:socketio/socket.io-client@^1.7.1"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0"
+    },
+    "peerDependencies": {
+      "@angular/common": "npm:@angular/common@2.2.4",
+      "@angular/compiler": "npm:@angular/compiler@^2.2.4",
+      "@angular/core": "npm:@angular/core@2.2.4",
+      "@angular/platform-browser": "npm:@angular/platform-browser@^2.2.4",
+      "assert": "npm:jspm-nodelibs-assert@^0.2.0",
+      "babel-plugin-transform-decorators-legacy": "npm:babel-plugin-transform-decorators-legacy@^1.3.4",
+      "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
+      "constants": "npm:jspm-nodelibs-constants@^0.2.0",
+      "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
+      "events": "npm:jspm-nodelibs-events@^0.2.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "os": "npm:jspm-nodelibs-os@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "process": "npm:jspm-nodelibs-process@^0.2.0",
+      "rxjs": "npm:rxjs@^5.0.0-rc.4",
+      "stream": "npm:jspm-nodelibs-stream@^0.2.0",
+      "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+      "timers": "npm:jspm-nodelibs-timers@^0.2.0",
+      "util": "npm:jspm-nodelibs-util@^0.2.0",
+      "vm": "npm:jspm-nodelibs-vm@^0.2.0",
+      "zone.js": "npm:zone.js@^0.7.2"
+    },
+    "overrides": {
+      "github:socketio/socket.io-client@1.7.1": {
+        "main": "dist/socket.io.js"
+      },
+      "npm:@angular/common@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/common": ".",
+          "./testing": "./bundles/common-testing.umd.js"
+        }
+      },
+      "npm:@angular/compiler@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/compiler": ".",
+          "./testing": "./bundles/compiler-testing.umd.js"
+        }
+      },
+      "npm:@angular/core@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/core": ".",
+          "./testing": "./bundles/core-testing.umd.js"
+        }
+      },
+      "npm:@angular/http@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/http": ".",
+          "./testing": "./bundles/http-testing.umd.js"
+        }
+      },
+      "npm:@angular/platform-browser-dynamic@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/platform-browser-dynamic": ".",
+          "./testing": "./bundles/platform-browser-dynamic-testing.umd.js"
+        }
+      },
+      "npm:@angular/platform-browser@2.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/platform-browser": ".",
+          "./testing": "./bundles/platform-browser-testing.umd.js"
+        }
+      },
+      "npm:@angular/router@3.2.4": {
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        },
+        "map": {
+          "@angular/router": ".",
+          "./testing": "./bundles/router-testing.umd.js"
+        }
+      },
+      "npm:debug@2.3.3": {
+        "main": "browser.js",
+        "jspmNodeConversion": false,
+        "format": "cjs",
+        "map": {
+          "./browser.js": {
+            "node": "./node.js"
+          },
+          "./node.js": {
+            "browser": "./browser.js"
+          },
+          "fs": "@node/fs",
+          "net": "@node/net",
+          "tty": "@node/tty",
+          "util": "@node/util"
+        }
+      },
+      "npm:inherits@2.0.3": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:lodash@4.17.2": {
+        "map": {
+          "buffer": "@empty",
+          "process": "@empty"
+        }
+      },
+      "npm:ms@0.7.2": {
+        "jspmNodeConversion": false,
+        "format": "cjs"
+      },
+      "npm:reflect-metadata@0.1.8": {
+        "jspmNodeConversion": false,
+        "map": {
+          "crypto": {
+            "node": "@node/crypto",
+            "default": "@empty"
+          }
+        }
+      }
+    }
+  }
+}
